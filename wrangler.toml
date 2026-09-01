@@ -1,3 +1,10 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Datos PÚBLICOS del login del CMS (no secretos): se fijan aquí para que el
+# despliegue (wrangler deploy) no los borre. El GITHUB_CLIENT_SECRET NO va aquí;
+# vive cifrado en Cloudflare como Secret.
+[vars]
+GITHUB_CLIENT_ID = "Ov23liVVhG4c2aZiehUq"
+ALLOWED_DOMAINS = "gmetech-web.sweet-snowflake-a82a.workers.dev, gmetech.com.co, *.gmetech.com.co"
